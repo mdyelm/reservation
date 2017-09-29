@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ #RewriteCond %{HTTP:X-Forwarded-Proto} !https
+ #RewriteRule !/status https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+ Rewriterule ^phpmyadmin/.*$ - [PT]
+ RewriteRule ^$ app/webroot/ [L]
+ RewriteRule (.*) app/webroot/$1 [L]
+</IfModule>

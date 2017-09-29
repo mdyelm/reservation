@@ -1,0 +1,11 @@
+span.flatpickr-weekday {
+    display: inline-block;
+    width: 14.2857143%;
+}
+span.flatpickr-current-month {
+    top: 0px !important;
+}
+
+.flatpickr-day {
+    flex-basis: 13.8857143%;
+}
